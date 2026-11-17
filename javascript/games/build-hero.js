@@ -1,4 +1,4 @@
-import { CHARACTERS, CATEGORIES } from '../data/characters.js';
+import { CHARACTERS, CATEGORIES } from '../data/mha-characters.js';
 import { cpuDecide } from './cpu-strategy.js';
 
 const DIFF_KEY = 'prime_hero_difficulty';
@@ -221,7 +221,7 @@ export function mountPrimeHeroGame(container, { mode = 'cpu', onExit } = {}) {
                     <img src="${getCharacterImage(char.id)}" alt="" class="w-9 h-9 rounded-full object-cover object-top bg-gray-950 border border-white/15 shrink-0">
                     <div class="min-w-0 flex-1">
                         <span class="text-[10px] font-bold uppercase ${cat.color} block leading-none">${cat.label}</span>
-                        <span class="text-xs sm:text-sm font-bold text-white truncate block">${esc(char.name)}</span>
+                        <span class="text-xs sm:text-sm font-bold text-white truncate block">${esc(char.heroName)}</span>
                     </div>
                 `;
                 host.appendChild(row);
@@ -273,10 +273,10 @@ export function mountPrimeHeroGame(container, { mode = 'cpu', onExit } = {}) {
 
         card.style.borderColor = char.color;
         bg.className = `absolute inset-0 bg-gradient-to-br ${char.gradient} opacity-90`;
-        avatar.innerHTML = `<img src="${getCharacterImage(char.id)}" alt="${esc(char.name)}" class="w-full h-full object-cover object-top ${spinning ? 'scale-110' : ''} transition-transform duration-150">`;
+        avatar.innerHTML = `<img src="${getCharacterImage(char.id)}" alt="${esc(char.heroName)}" class="w-full h-full object-cover object-top ${spinning ? 'scale-110' : ''} transition-transform duration-150">`;
         role.textContent = char.role;
         hint.textContent = spinning ? '???' : '¿Dónde encaja?';
-        name.textContent = char.name;
+        name.textContent = char.heroName;
         real.textContent = char.realName;
         quirk.textContent = `Don: ${char.quirkName}`;
     }
@@ -309,7 +309,7 @@ export function mountPrimeHeroGame(container, { mode = 'cpu', onExit } = {}) {
         if (showMini) {
             container.querySelector('#ph-mini-img').src = getCharacterImage(state.currentChar.id);
             container.querySelector('#ph-mini-turn').textContent = is2P && state.turn === 'p2' ? 'Jugador 2 • Asignando' : 'Tu Equipo • Asignando';
-            container.querySelector('#ph-mini-name').textContent = state.currentChar.name;
+            container.querySelector('#ph-mini-name').textContent = state.currentChar.heroName;
         }
 
         updateCard(state.currentChar, state.isSpinning);
@@ -348,12 +348,12 @@ export function mountPrimeHeroGame(container, { mode = 'cpu', onExit } = {}) {
                 state.canSelect = true;
 
                 if (state.turn === 'p2' && !is2P) {
-                    state.status = `La CPU obtuvo a ${chosen.name}...`;
+                    state.status = `La CPU obtuvo a ${chosen.heroName}...`;
                     renderAll();
                     after(cpuTurn, 650);
                 } else {
                     const who = state.turn === 'p1' ? (is2P ? 'Jugador 1' : 'Elige') : 'Jugador 2';
-                    state.status = `${who}: ¡Elige una categoría para ${chosen.name}!`;
+                    state.status = `${who}: ¡Elige una categoría para ${chosen.heroName}!`;
                     renderAll();
                 }
             }
@@ -528,7 +528,7 @@ export function mountPrimeHeroGame(container, { mode = 'cpu', onExit } = {}) {
                     <div data-side="left" class="duel-clash-left flex items-center gap-2.5 w-full sm:w-5/12 rounded-lg p-1.5 transition-all duration-300">
                         <img src="${getCharacterImage(c1.id)}" alt="" class="w-11 h-11 rounded-full object-cover object-top bg-gray-900 border-2 border-blue-400/60 shrink-0">
                         <div class="min-w-0 flex-1">
-                            <span class="text-sm font-bold text-white truncate block">${esc(c1.name)}</span>
+                            <span class="text-sm font-bold text-white truncate block">${esc(c1.heroName)}</span>
                         </div>
                     </div>
 
@@ -539,7 +539,7 @@ export function mountPrimeHeroGame(container, { mode = 'cpu', onExit } = {}) {
 
                     <div data-side="right" class="duel-clash-right flex items-center justify-end gap-2.5 w-full sm:w-5/12 text-right rounded-lg p-1.5 transition-all duration-300">
                         <div class="min-w-0 flex-1">
-                            <span class="text-sm font-bold text-white truncate block">${esc(c2.name)}</span>
+                            <span class="text-sm font-bold text-white truncate block">${esc(c2.heroName)}</span>
                         </div>
                         <img src="${getCharacterImage(c2.id)}" alt="" class="w-11 h-11 rounded-full object-cover object-top bg-gray-900 border-2 border-red-400/60 shrink-0">
                     </div>

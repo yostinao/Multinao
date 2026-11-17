@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MULTINAO</title>
     <link rel="icon" type="image/webp" href="images/logo.webp">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="halftone bg-gray-950 text-white min-h-screen flex flex-col">
 
@@ -33,44 +32,60 @@
                 <img src="images/multinao-logo.webp" alt="MULTINAO" class="h-24 sm:h-32 md:h-36 w-auto object-contain drop-shadow-[0_0_24px_rgba(0,240,255,0.65)]">
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
                 <!-- My Hero Academia -->
-                <a href="#/mha" class="group relative rounded-2xl overflow-hidden border-2 border-emerald-500/50 hover:border-emerald-400 bg-gray-900 shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col">
-                    <div class="aspect-[16/10] bg-gradient-to-br from-emerald-500/20 via-red-600/20 to-gray-950 relative overflow-hidden flex items-center justify-center p-6">
-                        <img src="images/banners/mha_logo.webp" alt="My Hero Academia" class="max-h-32 sm:max-h-36 object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-2xl">
-                    </div>
-                    <div class="p-5 flex-1 flex flex-col justify-between bg-gray-900/95 border-t border-gray-800">
-                        <div>
-                            <div class="flex items-center justify-between gap-2 mb-1.5">
-                                <h2 class="font-hero text-2xl sm:text-3xl text-emerald-400 tracking-wide">MY HERO ACADEMIA</h2>
-                                <span class="text-[11px] font-bold uppercase bg-emerald-500/15 text-emerald-300 border border-emerald-500/40 px-2 py-0.5 rounded">80 Héroes</span>
-                            </div>
-                            <p class="text-xs sm:text-sm text-gray-300">Build a Hero (vs CPU / 2P) y Guess the Hero diario.</p>
-                        </div>
-                        <span class="mt-4 inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emerald-400 group-hover:translate-x-1 transition-transform">
-                            Entrar al universo →
-                        </span>
-                    </div>
+                <a href="#/mha" aria-label="Entrar a My Hero Academia"
+                   class="group relative aspect-[16/10] rounded-2xl overflow-hidden border-2 border-emerald-500/50 hover:border-emerald-400 bg-gray-950 shadow-2xl hover:shadow-[0_0_32px_rgba(16,185,129,0.35)] transition-all duration-300 hover:-translate-y-1.5 flex items-center justify-center p-6">
+                    <img src="images/banners/mha_bg.webp" alt=""
+                         class="absolute inset-0 w-full h-full object-cover blur-[1.5px] scale-105 opacity-80 group-hover:scale-110 group-hover:opacity-95 group-hover:blur-0 transition-all duration-500">
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(3,7,18,0.18)_0%,rgba(3,7,18,0.78)_100%)]"></div>
+                    <img src="images/banners/mha_logo.webp" alt="My Hero Academia"
+                         class="relative z-10 max-h-32 sm:max-h-36 w-auto object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-[0_8px_20px_rgba(0,0,0,0.95)]">
                 </a>
 
                 <!-- One Piece -->
-                <a href="#/op" class="group relative rounded-2xl overflow-hidden border-2 border-amber-500/50 hover:border-amber-400 bg-gray-900 shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col">
-                    <div class="aspect-[16/10] bg-gradient-to-br from-amber-500/20 via-sky-600/20 to-gray-950 relative overflow-hidden flex items-center justify-center p-6">
-                        <img src="images/banners/op_logo.webp" alt="One Piece" class="max-h-32 sm:max-h-36 object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-2xl">
-                    </div>
-                    <div class="p-5 flex-1 flex flex-col justify-between bg-gray-900/95 border-t border-gray-800">
-                        <div>
-                            <div class="flex items-center justify-between gap-2 mb-1.5">
-                                <h2 class="font-hero text-2xl sm:text-3xl text-amber-400 tracking-wide">ONE PIECE</h2>
-                                <span class="text-[11px] font-bold uppercase bg-amber-500/15 text-amber-300 border border-amber-500/40 px-2 py-0.5 rounded">105 Piratas</span>
-                            </div>
-                            <p class="text-xs sm:text-sm text-gray-300">Build a Pirate (vs CPU / 2P) y Adivina el Pirata (hasta Isla Gyojin).</p>
-                        </div>
-                        <span class="mt-4 inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-amber-400 group-hover:translate-x-1 transition-transform">
-                            Zarpar al Grand Line →
-                        </span>
-                    </div>
+                <a href="#/op" aria-label="Entrar a One Piece"
+                   class="group relative aspect-[16/10] rounded-2xl overflow-hidden border-2 border-amber-500/50 hover:border-amber-400 bg-gray-950 shadow-2xl hover:shadow-[0_0_32px_rgba(245,158,11,0.35)] transition-all duration-300 hover:-translate-y-1.5 flex items-center justify-center p-6">
+                    <img src="images/banners/op_bg.webp" alt=""
+                         class="absolute inset-0 w-full h-full object-cover blur-[1.5px] scale-105 opacity-80 group-hover:scale-110 group-hover:opacity-95 group-hover:blur-0 transition-all duration-500">
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(3,7,18,0.18)_0%,rgba(3,7,18,0.78)_100%)]"></div>
+                    <img src="images/banners/op_logo.webp" alt="One Piece"
+                         class="relative z-10 max-h-32 sm:max-h-36 w-auto object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-[0_8px_20px_rgba(0,0,0,0.95)]">
                 </a>
+
+                <!-- Blue Lock -->
+                <a href="#/bl" aria-label="Entrar a Blue Lock"
+                   class="group relative aspect-[16/10] rounded-2xl overflow-hidden border-2 border-blue-500/50 hover:border-blue-400 bg-gray-950 shadow-2xl hover:shadow-[0_0_32px_rgba(59,130,246,0.4)] transition-all duration-300 hover:-translate-y-1.5 flex items-center justify-center p-6">
+                    <img src="images/banners/bl_bg.webp" alt=""
+                         class="absolute inset-0 w-full h-full object-cover blur-[1.5px] scale-105 opacity-80 group-hover:scale-110 group-hover:opacity-95 group-hover:blur-0 transition-all duration-500">
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(3,7,18,0.18)_0%,rgba(3,7,18,0.78)_100%)]"></div>
+                    <img src="images/banners/bl_logo.webp" alt="Blue Lock"
+                         class="relative z-10 max-h-32 sm:max-h-36 w-auto object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-[0_8px_20px_rgba(0,0,0,0.95)]">
+                </a>
+
+                <!-- Próximamente 1 -->
+                <div aria-disabled="true"
+                     class="relative aspect-[16/10] rounded-2xl overflow-hidden border-2 border-dashed border-gray-700/80 bg-gray-900/55 backdrop-blur-sm shadow-xl flex flex-col items-center justify-center p-6 select-none">
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,240,255,0.06)_0%,transparent_70%)]"></div>
+                    <span class="relative z-10 text-2xl sm:text-3xl mb-1.5 opacity-60">🔒</span>
+                    <span class="relative z-10 font-hero text-2xl sm:text-3xl tracking-wider text-gray-400">PRÓXIMAMENTE</span>
+                </div>
+
+                <!-- Próximamente 2 -->
+                <div aria-disabled="true"
+                     class="relative aspect-[16/10] rounded-2xl overflow-hidden border-2 border-dashed border-gray-700/80 bg-gray-900/55 backdrop-blur-sm shadow-xl flex flex-col items-center justify-center p-6 select-none">
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,240,255,0.06)_0%,transparent_70%)]"></div>
+                    <span class="relative z-10 text-2xl sm:text-3xl mb-1.5 opacity-60">🔒</span>
+                    <span class="relative z-10 font-hero text-2xl sm:text-3xl tracking-wider text-gray-400">PRÓXIMAMENTE</span>
+                </div>
+
+                <!-- Próximamente 3 -->
+                <div aria-disabled="true"
+                     class="relative aspect-[16/10] rounded-2xl overflow-hidden border-2 border-dashed border-gray-700/80 bg-gray-900/55 backdrop-blur-sm shadow-xl flex flex-col items-center justify-center p-6 select-none">
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,240,255,0.06)_0%,transparent_70%)]"></div>
+                    <span class="relative z-10 text-2xl sm:text-3xl mb-1.5 opacity-60">🔒</span>
+                    <span class="relative z-10 font-hero text-2xl sm:text-3xl tracking-wider text-gray-400">PRÓXIMAMENTE</span>
+                </div>
             </div>
         </section>
 
@@ -88,7 +103,7 @@
                 <p class="text-gray-300 text-sm sm:text-base">Selecciona un minijuego</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Build a Hero -->
                 <button type="button" data-open-build="mha" class="group relative aspect-[16/10] w-full rounded-2xl overflow-hidden border-2 border-emerald-500/40 hover:border-emerald-400 bg-gradient-to-br from-emerald-950 via-gray-950 to-black shadow-2xl transition-all duration-300 hover:-translate-y-1 text-left cursor-pointer">
                     <img src="images/banners/mha_build_hero.webp" alt="Build a Hero" class="w-full h-full object-cover opacity-50 group-hover:opacity-70 group-hover:scale-105 transition-all duration-300">
@@ -106,6 +121,40 @@
                         GUESS THE HERO
                     </h2>
                 </a>
+
+                <!-- Blur Hero -->
+                <a href="#/mha/blur" class="group relative aspect-[16/10] w-full rounded-2xl overflow-hidden border-2 border-yellow-500/40 hover:border-yellow-400 bg-gradient-to-br from-yellow-950 via-gray-950 to-black shadow-2xl transition-all duration-300 hover:-translate-y-1 block">
+                    <img src="images/banners/mha_blur_hero.webp" alt="Blur Hero" class="w-full h-full object-cover opacity-50 group-hover:opacity-70 group-hover:scale-105 transition-all duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-yellow-950/95 via-yellow-900/35 to-yellow-500/15"></div>
+                    <h2 class="font-hero text-3xl sm:text-4xl text-yellow-400 tracking-wide absolute bottom-4 left-5 drop-shadow-[0_2px_6px_rgba(0,0,0,0.95)]">
+                        BLUR HERO
+                    </h2>
+                </a>
+
+                <!-- Quirk Match -->
+                <a href="#/mha/quirk" class="group relative aspect-[16/10] w-full rounded-2xl overflow-hidden border-2 border-purple-500/40 hover:border-purple-400 bg-gradient-to-br from-purple-950 via-gray-950 to-black shadow-2xl transition-all duration-300 hover:-translate-y-1 block">
+                    <img src="images/banners/mha_quirk_match.webp" alt="Quirk Match" class="w-full h-full object-cover opacity-50 group-hover:opacity-70 group-hover:scale-105 transition-all duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-purple-950/95 via-purple-900/35 to-purple-500/15"></div>
+                    <h2 class="font-hero text-3xl sm:text-4xl text-purple-400 tracking-wide absolute bottom-4 left-5 drop-shadow-[0_2px_6px_rgba(0,0,0,0.95)]">
+                        QUIRK MATCH
+                    </h2>
+                </a>
+
+                <!-- Próximamente MHA 2 -->
+                <div aria-disabled="true"
+                     class="relative aspect-[16/10] rounded-2xl overflow-hidden border-2 border-dashed border-emerald-500/35 bg-gray-900/55 backdrop-blur-sm shadow-xl flex flex-col items-center justify-center p-6 select-none">
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.08)_0%,transparent_70%)]"></div>
+                    <span class="relative z-10 text-2xl sm:text-3xl mb-1.5 opacity-60">🔒</span>
+                    <span class="relative z-10 font-hero text-2xl sm:text-3xl tracking-wider text-gray-400">PRÓXIMAMENTE</span>
+                </div>
+
+                <!-- Próximamente MHA 3 -->
+                <div aria-disabled="true"
+                     class="relative aspect-[16/10] rounded-2xl overflow-hidden border-2 border-dashed border-emerald-500/35 bg-gray-900/55 backdrop-blur-sm shadow-xl flex flex-col items-center justify-center p-6 select-none">
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.08)_0%,transparent_70%)]"></div>
+                    <span class="relative z-10 text-2xl sm:text-3xl mb-1.5 opacity-60">🔒</span>
+                    <span class="relative z-10 font-hero text-2xl sm:text-3xl tracking-wider text-gray-400">PRÓXIMAMENTE</span>
+                </div>
             </div>
         </section>
 
@@ -123,7 +172,7 @@
                 <p class="text-gray-300 text-sm sm:text-base">Selecciona un minijuego</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Build a Pirate -->
                 <button type="button" data-open-build="op" class="group relative aspect-[16/10] w-full rounded-2xl overflow-hidden border-2 border-amber-500/40 hover:border-amber-400 bg-gradient-to-br from-amber-950 via-gray-950 to-black shadow-2xl transition-all duration-300 hover:-translate-y-1 text-left cursor-pointer">
                     <img src="images/banners/op_build_pirate.webp" alt="Build a Pirate" class="w-full h-full object-cover opacity-50 group-hover:opacity-70 group-hover:scale-105 transition-all duration-300">
@@ -141,6 +190,105 @@
                         GUESS A PIRATE
                     </h2>
                 </a>
+
+                <!-- Próximamente OP 1 -->
+                <div aria-disabled="true"
+                     class="relative aspect-[16/10] rounded-2xl overflow-hidden border-2 border-dashed border-amber-500/35 bg-gray-900/55 backdrop-blur-sm shadow-xl flex flex-col items-center justify-center p-6 select-none">
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(245,158,11,0.08)_0%,transparent_70%)]"></div>
+                    <span class="relative z-10 text-2xl sm:text-3xl mb-1.5 opacity-60">🔒</span>
+                    <span class="relative z-10 font-hero text-2xl sm:text-3xl tracking-wider text-gray-400">PRÓXIMAMENTE</span>
+                </div>
+
+                <!-- Próximamente OP 2 -->
+                <div aria-disabled="true"
+                     class="relative aspect-[16/10] rounded-2xl overflow-hidden border-2 border-dashed border-amber-500/35 bg-gray-900/55 backdrop-blur-sm shadow-xl flex flex-col items-center justify-center p-6 select-none">
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(245,158,11,0.08)_0%,transparent_70%)]"></div>
+                    <span class="relative z-10 text-2xl sm:text-3xl mb-1.5 opacity-60">🔒</span>
+                    <span class="relative z-10 font-hero text-2xl sm:text-3xl tracking-wider text-gray-400">PRÓXIMAMENTE</span>
+                </div>
+
+                <!-- Próximamente OP 3 -->
+                <div aria-disabled="true"
+                     class="relative aspect-[16/10] rounded-2xl overflow-hidden border-2 border-dashed border-amber-500/35 bg-gray-900/55 backdrop-blur-sm shadow-xl flex flex-col items-center justify-center p-6 select-none">
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(245,158,11,0.08)_0%,transparent_70%)]"></div>
+                    <span class="relative z-10 text-2xl sm:text-3xl mb-1.5 opacity-60">🔒</span>
+                    <span class="relative z-10 font-hero text-2xl sm:text-3xl tracking-wider text-gray-400">PRÓXIMAMENTE</span>
+                </div>
+
+                <!-- Próximamente OP 4 -->
+                <div aria-disabled="true"
+                     class="relative aspect-[16/10] rounded-2xl overflow-hidden border-2 border-dashed border-amber-500/35 bg-gray-900/55 backdrop-blur-sm shadow-xl flex flex-col items-center justify-center p-6 select-none">
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(245,158,11,0.08)_0%,transparent_70%)]"></div>
+                    <span class="relative z-10 text-2xl sm:text-3xl mb-1.5 opacity-60">🔒</span>
+                    <span class="relative z-10 font-hero text-2xl sm:text-3xl tracking-wider text-gray-400">PRÓXIMAMENTE</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISTA 2C: Minijuegos de Blue Lock -->
+        <section id="view-bl" class="view-section max-w-5xl mx-auto px-4 w-full">
+            <div class="mb-4">
+                <a href="#/" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold uppercase tracking-wider text-gray-300 hover:text-white bg-white/5 hover:bg-white/10 px-3.5 py-2 rounded-lg transition">
+                    <span>←</span><span>INICIO</span>
+                </a>
+            </div>
+
+            <div class="flex flex-col items-center text-center mb-8">
+                <h1 class="sr-only">Blue Lock</h1>
+                <img src="images/banners/bl_logo.webp" alt="Blue Lock" class="h-24 sm:h-32 w-auto object-contain mb-2 drop-shadow-2xl">
+                <p class="text-gray-300 text-sm sm:text-base">Selecciona un minijuego</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Build a Striker -->
+                <button type="button" data-open-build="bl" class="group relative aspect-[16/10] w-full rounded-2xl overflow-hidden border-2 border-blue-500/40 hover:border-blue-400 bg-gradient-to-br from-blue-950 via-gray-950 to-black shadow-2xl transition-all duration-300 hover:-translate-y-1 text-left cursor-pointer">
+                    <img src="images/banners/bl_build_striker.webp" alt="Build a Striker" class="w-full h-full object-cover opacity-50 group-hover:opacity-70 group-hover:scale-105 transition-all duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-950/95 via-blue-900/35 to-blue-500/15"></div>
+                    <h2 class="font-hero text-3xl sm:text-4xl text-blue-400 tracking-wide absolute bottom-4 left-5 drop-shadow-[0_2px_6px_rgba(0,0,0,0.95)]">
+                        BUILD A STRIKER
+                    </h2>
+                </button>
+
+                <!-- Guess the Striker -->
+                <a href="#/bl/guess" class="group relative aspect-[16/10] w-full rounded-2xl overflow-hidden border-2 border-cyan-500/40 hover:border-cyan-400 bg-gradient-to-br from-cyan-950 via-gray-950 to-black shadow-2xl transition-all duration-300 hover:-translate-y-1 block">
+                    <img src="images/banners/bl_guess_striker.webp" alt="Guess the Striker" class="w-full h-full object-cover opacity-50 group-hover:opacity-70 group-hover:scale-105 transition-all duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-cyan-950/95 via-cyan-900/35 to-cyan-500/15"></div>
+                    <h2 class="font-hero text-3xl sm:text-4xl text-cyan-400 tracking-wide absolute bottom-4 left-5 drop-shadow-[0_2px_6px_rgba(0,0,0,0.95)]">
+                        GUESS THE STRIKER
+                    </h2>
+                </a>
+
+                <!-- Próximamente BL 1 -->
+                <div aria-disabled="true"
+                     class="relative aspect-[16/10] rounded-2xl overflow-hidden border-2 border-dashed border-blue-500/35 bg-gray-900/55 backdrop-blur-sm shadow-xl flex flex-col items-center justify-center p-6 select-none">
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.08)_0%,transparent_70%)]"></div>
+                    <span class="relative z-10 text-2xl sm:text-3xl mb-1.5 opacity-60">🔒</span>
+                    <span class="relative z-10 font-hero text-2xl sm:text-3xl tracking-wider text-gray-400">PRÓXIMAMENTE</span>
+                </div>
+
+                <!-- Próximamente BL 2 -->
+                <div aria-disabled="true"
+                     class="relative aspect-[16/10] rounded-2xl overflow-hidden border-2 border-dashed border-blue-500/35 bg-gray-900/55 backdrop-blur-sm shadow-xl flex flex-col items-center justify-center p-6 select-none">
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.08)_0%,transparent_70%)]"></div>
+                    <span class="relative z-10 text-2xl sm:text-3xl mb-1.5 opacity-60">🔒</span>
+                    <span class="relative z-10 font-hero text-2xl sm:text-3xl tracking-wider text-gray-400">PRÓXIMAMENTE</span>
+                </div>
+
+                <!-- Próximamente BL 3 -->
+                <div aria-disabled="true"
+                     class="relative aspect-[16/10] rounded-2xl overflow-hidden border-2 border-dashed border-blue-500/35 bg-gray-900/55 backdrop-blur-sm shadow-xl flex flex-col items-center justify-center p-6 select-none">
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.08)_0%,transparent_70%)]"></div>
+                    <span class="relative z-10 text-2xl sm:text-3xl mb-1.5 opacity-60">🔒</span>
+                    <span class="relative z-10 font-hero text-2xl sm:text-3xl tracking-wider text-gray-400">PRÓXIMAMENTE</span>
+                </div>
+
+                <!-- Próximamente BL 4 -->
+                <div aria-disabled="true"
+                     class="relative aspect-[16/10] rounded-2xl overflow-hidden border-2 border-dashed border-blue-500/35 bg-gray-900/55 backdrop-blur-sm shadow-xl flex flex-col items-center justify-center p-6 select-none">
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.08)_0%,transparent_70%)]"></div>
+                    <span class="relative z-10 text-2xl sm:text-3xl mb-1.5 opacity-60">🔒</span>
+                    <span class="relative z-10 font-hero text-2xl sm:text-3xl tracking-wider text-gray-400">PRÓXIMAMENTE</span>
+                </div>
             </div>
         </section>
 
@@ -148,7 +296,7 @@
         <section id="view-game" class="view-section w-full"></section>
     </main>
 
-    <!-- Modal de configuración de partida (Build a Hero / Build a Pirate) -->
+    <!-- Modal de configuración de partida (Build a Hero / Build a Pirate / Build a Striker) -->
     <div id="build-setup-modal" role="dialog" aria-modal="true" aria-labelledby="build-setup-title" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
         <div class="bg-gray-900 border-2 border-emerald-500/60 rounded-2xl max-w-md w-full p-6 shadow-2xl relative">
             <button type="button" id="build-setup-close" aria-label="Cerrar" class="absolute top-3.5 right-3.5 text-gray-400 hover:text-white w-8 h-8 rounded-lg hover:bg-white/10 flex items-center justify-center font-bold">✕</button>
@@ -213,6 +361,7 @@
             universe: document.getElementById('view-universe'),
             mha:      document.getElementById('view-mha'),
             op:       document.getElementById('view-op'),
+            bl:       document.getElementById('view-bl'),
             game:     document.getElementById('view-game')
         };
         const crumbs = document.getElementById('header-crumbs');
@@ -220,30 +369,55 @@
         const leaveCancel = document.getElementById('leave-cancel');
         const leaveConfirm = document.getElementById('leave-confirm');
 
-        // Modal de configuración de Build a Hero / Build a Pirate
+        // Modal de configuración de Build a Hero / Build a Pirate / Build a Striker
         const setupModal = document.getElementById('build-setup-modal');
         const setupTitle = document.getElementById('build-setup-title');
         const setupClose = document.getElementById('build-setup-close');
         const setupDiffWrap = document.getElementById('build-setup-diff-wrap');
         const setupStart = document.getElementById('build-setup-start');
 
+        const SETUP_CONFIG = {
+            mha: {
+                title: 'BUILD A HERO',
+                diffKey: 'prime_hero_difficulty',
+                textClass: 'text-emerald-400',
+                borderClass: 'border-emerald-400',
+                bgClass: 'bg-emerald-500/20',
+                btnClass: 'bg-emerald-400 hover:bg-emerald-300 text-black'
+            },
+            op: {
+                title: 'BUILD A PIRATE',
+                diffKey: 'build_pirate_difficulty',
+                textClass: 'text-amber-400',
+                borderClass: 'border-amber-400',
+                bgClass: 'bg-amber-500/20',
+                btnClass: 'bg-amber-400 hover:bg-amber-300 text-black'
+            },
+            bl: {
+                title: 'BUILD A STRIKER',
+                diffKey: 'build_striker_difficulty',
+                textClass: 'text-blue-400',
+                borderClass: 'border-blue-400',
+                bgClass: 'bg-blue-500/20',
+                btnClass: 'bg-blue-500 hover:bg-blue-400 text-white'
+            }
+        };
+
         let setupUniverse = 'mha';
         let setupMode = 'cpu';
         let setupDiff = 'normal';
 
         function syncSetupUI() {
-            const isOp = setupUniverse === 'op';
-            const accentBorder = isOp ? 'border-amber-400' : 'border-emerald-400';
-            const accentBg = isOp ? 'bg-amber-500/20' : 'bg-emerald-500/20';
+            const cfg = SETUP_CONFIG[setupUniverse] || SETUP_CONFIG.mha;
 
-            setupTitle.textContent = isOp ? 'BUILD A PIRATE' : 'BUILD A HERO';
-            setupTitle.className = `font-hero text-3xl ${isOp ? 'text-amber-400' : 'text-emerald-400'} tracking-wide mb-1`;
-            setupStart.className = `w-full btn-comic ${isOp ? 'bg-amber-400 hover:bg-amber-300' : 'bg-emerald-400 hover:bg-emerald-300'} text-black font-hero text-2xl py-2.5 rounded-xl tracking-wider cursor-pointer`;
+            setupTitle.textContent = cfg.title;
+            setupTitle.className = `font-hero text-3xl ${cfg.textClass} tracking-wide mb-1`;
+            setupStart.className = `w-full btn-comic ${cfg.btnClass} font-hero text-2xl py-2.5 rounded-xl tracking-wider cursor-pointer`;
 
             setupModal.querySelectorAll('[data-setup-mode]').forEach(btn => {
                 const active = btn.dataset.setupMode === setupMode;
                 btn.className = active
-                    ? `p-3.5 rounded-xl border-2 ${accentBorder} ${accentBg} text-left transition cursor-pointer`
+                    ? `p-3.5 rounded-xl border-2 ${cfg.borderClass} ${cfg.bgClass} text-left transition cursor-pointer`
                     : 'p-3.5 rounded-xl border-2 border-gray-700 bg-gray-800/70 hover:border-gray-500 text-left transition cursor-pointer';
             });
 
@@ -252,16 +426,16 @@
             setupModal.querySelectorAll('[data-setup-diff]').forEach(btn => {
                 const active = btn.dataset.setupDiff === setupDiff;
                 btn.className = active
-                    ? `py-2 px-3 rounded-xl border ${accentBorder} ${accentBg} text-xs font-bold text-white transition cursor-pointer`
+                    ? `py-2 px-3 rounded-xl border ${cfg.borderClass} ${cfg.bgClass} text-xs font-bold text-white transition cursor-pointer`
                     : 'py-2 px-3 rounded-xl border border-gray-700 bg-gray-800 text-xs font-bold text-gray-300 hover:text-white transition cursor-pointer';
             });
         }
 
         function openBuildSetup(universe) {
-            setupUniverse = universe;
+            setupUniverse = SETUP_CONFIG[universe] ? universe : 'mha';
             setupMode = 'cpu';
-            const diffKey = universe === 'op' ? 'build_pirate_difficulty' : 'prime_hero_difficulty';
-            setupDiff = localStorage.getItem(diffKey) || 'normal';
+            const cfg = SETUP_CONFIG[setupUniverse];
+            setupDiff = localStorage.getItem(cfg.diffKey) || 'normal';
             if (!['easy', 'normal', 'hard'].includes(setupDiff)) setupDiff = 'normal';
             syncSetupUI();
             setupModal.classList.remove('hidden');
@@ -300,8 +474,8 @@
 
         setupStart.addEventListener('click', () => {
             if (setupMode === 'cpu') {
-                const diffKey = setupUniverse === 'op' ? 'build_pirate_difficulty' : 'prime_hero_difficulty';
-                localStorage.setItem(diffKey, setupDiff);
+                const cfg = SETUP_CONFIG[setupUniverse] || SETUP_CONFIG.mha;
+                localStorage.setItem(cfg.diffKey, setupDiff);
             }
             closeBuildSetup();
             location.hash = `#/${setupUniverse}/build/${setupMode}`;
@@ -413,6 +587,20 @@
                     activeGame = mod.mountGuessHeroGame(views.game, { onExit: () => { location.hash = '#/mha'; } });
                     return;
                 }
+                if (route === '/mha/blur') {
+                    showSection('game');
+                    setCrumbs([{ label: 'Inicio', href: '#/' }, { label: 'MHA', href: '#/mha' }, { label: 'Blur Hero' }]);
+                    const mod = await import('./javascript/games/blur-hero.js');
+                    activeGame = mod.mountBlurHeroGame(views.game, { onExit: () => { location.hash = '#/mha'; } });
+                    return;
+                }
+                if (route === '/mha/quirk') {
+                    showSection('game');
+                    setCrumbs([{ label: 'Inicio', href: '#/' }, { label: 'MHA', href: '#/mha' }, { label: 'Quirk Match' }]);
+                    const mod = await import('./javascript/games/quirk-match.js');
+                    activeGame = mod.mountQuirkMatchGame(views.game, { onExit: () => { location.hash = '#/mha'; } });
+                    return;
+                }
 
                 // --- Rutas One Piece ---
                 if (route === '/op') {
@@ -436,9 +624,31 @@
                     return;
                 }
 
+                // --- Rutas Blue Lock ---
+                if (route === '/bl') {
+                    showSection('bl');
+                    setCrumbs([{ label: 'Inicio', href: '#/' }, { label: 'Blue Lock' }]);
+                    return;
+                }
+                if (route === '/bl/build/cpu' || route === '/bl/build/2p') {
+                    const mode = route.endsWith('/2p') ? '2p' : 'cpu';
+                    showSection('game');
+                    setCrumbs([{ label: 'Inicio', href: '#/' }, { label: 'Blue Lock', href: '#/bl' }, { label: mode === '2p' ? 'Striker 2P' : 'Striker vs CPU' }]);
+                    const mod = await import('./javascript/games/build-striker.js');
+                    activeGame = mod.mountBuildStrikerGame(views.game, { mode, onExit: () => { location.hash = '#/bl'; } });
+                    return;
+                }
+                if (route === '/bl/guess') {
+                    showSection('game');
+                    setCrumbs([{ label: 'Inicio', href: '#/' }, { label: 'Blue Lock', href: '#/bl' }, { label: 'Guess the Striker' }]);
+                    const mod = await import('./javascript/games/guess-striker.js');
+                    activeGame = mod.mountGuessStrikerGame(views.game, { onExit: () => { location.hash = '#/bl'; } });
+                    return;
+                }
+
                 // --- Home / Universos ---
                 showSection('universe');
-                setCrumbs([{ label: 'Universos' }]);
+                setCrumbs([{ label: 'Inicio' }]);
             } catch (err) {
                 showLoadError(err);
             }

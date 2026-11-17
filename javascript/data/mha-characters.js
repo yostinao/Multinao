@@ -31,10 +31,10 @@ export const DEBUT_ARCS = {
 export const CHARACTERS = [
     // --- TOP TIER / LEYENDAS ---
     {
-        id: 'all_for_one', heroName: 'All For One', realName: 'Shigaraki (Zen)', role: 'Villano',
+        id: 'all_for_one', heroName: 'All For One', realName: 'Zen Shigaraki', role: 'Villano',
         quirkName: 'All For One', color: '#581c87', gradient: 'from-purple-950 to-zinc-950',
         gender: 'Masculino', roles: ['Villano'], affiliations: ['Liga de Villanos'], quirkTypes: ['Acumulación', 'Emisor'], height: 225, debutArc: 8,
-        stats: { quirk: 100, intelligence: 96, experience: 100, combat: 94, strength: 93, agility: 87, speed: 91, resistance: 91 }
+        stats: { quirk: 100, intelligence: 96, experience: 100, combat: 94, strength: 95, agility: 87, speed: 91, resistance: 93 }
     },
     {
         id: 'toshinori_yagi', heroName: 'All Might', realName: 'Toshinori Yagi', role: 'Héroe Profesional',
@@ -55,7 +55,7 @@ export const CHARACTERS = [
         stats: { quirk: 99, intelligence: 86, experience: 82, combat: 94, strength: 99, agility: 96, speed: 98, resistance: 99 }
     },
     {
-        id: 'star_and_stripe', heroName: 'Star and Stripe', realName: 'Cathleen Bate', role: 'Héroe Profesional (EE.UU.)',
+        id: 'star_and_stripe', heroName: 'Star and Stripe', realName: 'Cathleen Bate', role: 'Héroe Profesional',
         quirkName: 'Nuevo Orden', color: '#1d4ed8', gradient: 'from-blue-600 via-red-600 to-amber-500',
         gender: 'Femenino', roles: ['Héroe Pro'], affiliations: ['Independiente'], quirkTypes: ['Emisor'], height: 193, debutArc: 16,
         stats: { quirk: 99, intelligence: 90, experience: 95, combat: 95, strength: 96, agility: 90, speed: 93, resistance: 94 }
@@ -64,7 +64,7 @@ export const CHARACTERS = [
         id: 'gigantomachia', heroName: 'Gigantomachia', realName: 'Gigantomachia', role: 'Villano',
         quirkName: 'Múltiples Dones (Resistencia, Gigantificación)', color: '#78350f', gradient: 'from-stone-800 to-amber-950',
         gender: 'Masculino', roles: ['Villano'], affiliations: ['Liga de Villanos'], quirkTypes: ['Transformación', 'Mutante'], height: 2500, debutArc: 11,
-        stats: { quirk: 92, intelligence: 52, experience: 88, combat: 82, strength: 99, agility: 68, speed: 84, resistance: 99 }
+        stats: { quirk: 92, intelligence: 52, experience: 88, combat: 82, strength: 100, agility: 68, speed: 82, resistance: 99 }
     },
     {
         id: 'nana_shimura', heroName: 'Nana Shimura', realName: 'Nana Shimura', role: 'Portadora OFA',
@@ -76,13 +76,13 @@ export const CHARACTERS = [
         id: 'katsuki_bakugo', heroName: 'Dynamight', realName: 'Katsuki Bakugo', role: 'Estudiante U.A.',
         quirkName: 'Explosión', color: '#ea580c', gradient: 'from-orange-500 to-red-700',
         gender: 'Masculino', roles: ['Estudiante'], affiliations: ['Clase 1-A', 'U.A.'], quirkTypes: ['Emisor'], height: 172, debutArc: 1,
-        stats: { quirk: 94, intelligence: 88, experience: 79, combat: 95, strength: 84, agility: 97, speed: 97, resistance: 86 }
+        stats: { quirk: 94, intelligence: 88, experience: 79, combat: 95, strength: 82, agility: 97, speed: 97, resistance: 84 }
     },
     {
         id: 'shoto_todoroki', heroName: 'Shoto', realName: 'Shoto Todoroki', role: 'Estudiante U.A.',
         quirkName: 'Medio Frío Medio Caliente', color: '#0284c7', gradient: 'from-cyan-500 to-red-600',
         gender: 'Masculino', roles: ['Estudiante'], affiliations: ['Clase 1-A', 'U.A.'], quirkTypes: ['Emisor'], height: 176, debutArc: 2,
-        stats: { quirk: 95, intelligence: 86, experience: 78, combat: 89, strength: 82, agility: 83, speed: 85, resistance: 91 }
+        stats: { quirk: 95, intelligence: 86, experience: 78, combat: 89, strength: 82, agility: 86, speed: 88, resistance: 91 }
     },
     {
         id: 'enji_todoroki', heroName: 'Endeavor', realName: 'Enji Todoroki', role: 'Héroe Profesional',
@@ -94,13 +94,13 @@ export const CHARACTERS = [
         id: 'toya_todoroki', heroName: 'Dabi', realName: 'Toya Todoroki', role: 'Villano',
         quirkName: 'Llamas Azules', color: '#1d4ed8', gradient: 'from-blue-600 to-slate-950',
         gender: 'Masculino', roles: ['Villano'], affiliations: ['Liga de Villanos'], quirkTypes: ['Emisor'], height: 176, debutArc: 7,
-        stats: { quirk: 97, intelligence: 80, experience: 80, combat: 84, strength: 78, agility: 82, speed: 86, resistance: 82 }
+        stats: { quirk: 97, intelligence: 80, experience: 80, combat: 84, strength: 78, agility: 82, speed: 86, resistance: 74 }
     },
     {
         id: 'kai_chisaki', heroName: 'Overhaul', realName: 'Kai Chisaki', role: 'Villano',
-        quirkName: 'Reparación', color: '#065f46', gradient: 'from-emerald-800 to-amber-950',
+        quirkName: 'Overhaul', color: '#065f46', gradient: 'from-emerald-800 to-amber-950',
         gender: 'Masculino', roles: ['Villano'], affiliations: ['Shie Hassaikai'], quirkTypes: ['Emisor'], height: 179, debutArc: 10,
-        stats: { quirk: 96, intelligence: 88, experience: 82, combat: 85, strength: 93, agility: 80, speed: 82, resistance: 92 }
+        stats: { quirk: 96, intelligence: 88, experience: 82, combat: 85, strength: 84, agility: 80, speed: 82, resistance: 92 }
     },
     {
         id: 're_destro', heroName: 'Re-Destro', realName: 'Rikiya Yotsubashi', role: 'Villano',
@@ -114,7 +114,7 @@ export const CHARACTERS = [
         id: 'keigo_takami', heroName: 'Hawks', realName: 'Keigo Takami', role: 'Héroe Profesional',
         quirkName: 'Alas Rígidas', color: '#d97706', gradient: 'from-amber-400 to-yellow-700',
         gender: 'Masculino', roles: ['Héroe Pro'], affiliations: ['Independiente'], quirkTypes: ['Mutante'], height: 172, debutArc: 12,
-        stats: { quirk: 86, intelligence: 90, experience: 92, combat: 91, strength: 71, agility: 93, speed: 92, resistance: 75 }
+        stats: { quirk: 86, intelligence: 90, experience: 92, combat: 91, strength: 71, agility: 93, speed: 96, resistance: 75 }
     },
     {
         id: 'mirko', heroName: 'Mirko', realName: 'Rumi Usagiyama', role: 'Héroe Profesional',
@@ -138,11 +138,11 @@ export const CHARACTERS = [
         id: 'mirio_togata', heroName: 'Lemillion', realName: 'Mirio Togata', role: 'Héroe Profesional',
         quirkName: 'Permeación', color: '#eab308', gradient: 'from-yellow-400 to-amber-600',
         gender: 'Masculino', roles: ['Estudiante', 'Héroe Pro'], affiliations: ['U.A.'], quirkTypes: ['Transformación'], height: 181, debutArc: 10,
-        stats: { quirk: 89, intelligence: 87, experience: 84, combat: 96, strength: 86, agility: 95, speed: 91, resistance: 89 }
+        stats: { quirk: 89, intelligence: 87, experience: 88, combat: 96, strength: 86, agility: 95, speed: 91, resistance: 89 }
     },
     {
         id: 'shota_aizawa', heroName: 'Eraser Head', realName: 'Shota Aizawa', role: 'Héroe Profesional',
-        quirkName: 'Borrado', color: '#334155', gradient: 'from-slate-600 to-zinc-950',
+        quirkName: 'Borrar', color: '#334155', gradient: 'from-slate-600 to-zinc-950',
         gender: 'Masculino', roles: ['Héroe Pro', 'Profesor'], affiliations: ['U.A.'], quirkTypes: ['Emisor'], height: 183, debutArc: 2,
         stats: { quirk: 93, intelligence: 92, experience: 96, combat: 92, strength: 74, agility: 85, speed: 80, resistance: 82 }
     },
@@ -150,7 +150,7 @@ export const CHARACTERS = [
         id: 'sorahiko_torino', heroName: 'Gran Torino', realName: 'Sorahiko Torino', role: 'Héroe Retirado',
         quirkName: 'Propulsión', color: '#b45309', gradient: 'from-amber-500 to-yellow-800',
         gender: 'Masculino', roles: ['Héroe Pro', 'Profesor'], affiliations: ['Independiente'], quirkTypes: ['Emisor'], height: 120, debutArc: 6,
-        stats: { quirk: 81, intelligence: 91, experience: 99, combat: 91, strength: 70, agility: 91, speed: 90, resistance: 72 }
+        stats: { quirk: 81, intelligence: 91, experience: 99, combat: 91, strength: 70, agility: 91, speed: 94, resistance: 72 }
     },
     {
         id: 'ryukyu', heroName: 'Ryukyu', realName: 'Ryuko Tatsuma', role: 'Héroe Profesional',
@@ -172,7 +172,7 @@ export const CHARACTERS = [
     },
     {
         id: 'shinji_nishiya', heroName: 'Kamui Woods', realName: 'Shinji Nishiya', role: 'Héroe Profesional',
-        quirkName: 'Arborización', color: '#92400e', gradient: 'from-amber-700 to-emerald-950',
+        quirkName: 'Enramada', color: '#92400e', gradient: 'from-amber-700 to-emerald-950',
         gender: 'Masculino', roles: ['Héroe Pro'], affiliations: ['Independiente'], quirkTypes: ['Transformación'], height: 168, debutArc: 1,
         stats: { quirk: 86, intelligence: 83, experience: 89, combat: 85, strength: 81, agility: 87, speed: 84, resistance: 82 }
     },
@@ -213,13 +213,13 @@ export const CHARACTERS = [
         stats: { quirk: 75, intelligence: 70, experience: 85, combat: 79, strength: 87, agility: 68, speed: 70, resistance: 83 }
     },
     {
-        id: 'mandalay', heroName: 'Mandalay', realName: 'Shino Sosaki', role: 'Héroe (Wild, Wild Pussycats)',
+        id: 'mandalay', heroName: 'Mandalay', realName: 'Shino Sosaki', role: 'Héroe Profesional',
         quirkName: 'Telepatía', color: '#dc2626', gradient: 'from-red-600 to-rose-950',
         gender: 'Femenino', roles: ['Héroe Pro'], affiliations: ['Independiente'], quirkTypes: ['Emisor'], height: 168, debutArc: 8,
         stats: { quirk: 80, intelligence: 84, experience: 88, combat: 80, strength: 70, agility: 84, speed: 81, resistance: 75 }
     },
     {
-        id: 'tiger', heroName: 'Tiger', realName: 'Yawara Chatora', role: 'Héroe (Wild, Wild Pussycats)',
+        id: 'tiger', heroName: 'Tiger', realName: 'Yawara Chatora', role: 'Héroe Profesional',
         quirkName: 'Cuerpo Flexible', color: '#9a3412', gradient: 'from-orange-800 to-stone-950',
         gender: 'Masculino', roles: ['Héroe Pro'], affiliations: ['Independiente'], quirkTypes: ['Transformación'], height: 185, debutArc: 8,
         stats: { quirk: 78, intelligence: 76, experience: 89, combat: 88, strength: 88, agility: 85, speed: 80, resistance: 86 }
@@ -233,10 +233,10 @@ export const CHARACTERS = [
         stats: { quirk: 90, intelligence: 91, experience: 94, combat: 93, strength: 74, agility: 89, speed: 86, resistance: 80 }
     },
     {
-        id: 'nomu_usj', heroName: 'Nomu (USJ)', realName: 'Bio-ingeniería', role: 'Villano',
+        id: 'nomu_usj', heroName: 'Nomu', realName: 'Bio-ingeniería', role: 'Villano',
         quirkName: 'Absorción de Impactos + Súper Regeneración', color: '#1e1b4b', gradient: 'from-indigo-950 to-black',
         gender: 'Otro', roles: ['Villano'], affiliations: ['Liga de Villanos'], quirkTypes: ['Mutante', 'Emisor'], height: 210, debutArc: 4,
-        stats: { quirk: 91, intelligence: 30, experience: 55, combat: 83, strength: 97, agility: 85, speed: 94, resistance: 96 }
+        stats: { quirk: 91, intelligence: 30, experience: 55, combat: 83, strength: 97, agility: 85, speed: 89, resistance: 96 }
     },
     {
         id: 'muscular', heroName: 'Muscular', realName: 'Goto Imasuji', role: 'Villano',
@@ -246,7 +246,7 @@ export const CHARACTERS = [
     },
     {
         id: 'twice', heroName: 'Twice', realName: 'Jin Bubaigawara', role: 'Villano',
-        quirkName: 'Doble (Desfile del Hombre Triste)', color: '#334155', gradient: 'from-slate-700 to-zinc-950',
+        quirkName: 'Twice', color: '#334155', gradient: 'from-slate-700 to-zinc-950',
         gender: 'Masculino', roles: ['Villano'], affiliations: ['Liga de Villanos'], quirkTypes: ['Emisor'], height: 178, debutArc: 8,
         stats: { quirk: 95, intelligence: 72, experience: 81, combat: 81, strength: 73, agility: 84, speed: 82, resistance: 76 }
     },
@@ -266,10 +266,10 @@ export const CHARACTERS = [
         id: 'stain', heroName: 'Stain', realName: 'Chizome Akaguro', role: 'Asesino de Héroes',
         quirkName: 'Coagulación de Sangre', color: '#7f1d1d', gradient: 'from-red-900 to-zinc-950',
         gender: 'Masculino', roles: ['Villano'], affiliations: ['Independiente'], quirkTypes: ['Emisor'], height: 177, debutArc: 6,
-        stats: { quirk: 83, intelligence: 84, experience: 91, combat: 94, strength: 79, agility: 93, speed: 90, resistance: 84 }
+        stats: { quirk: 83, intelligence: 84, experience: 91, combat: 95, strength: 79, agility: 93, speed: 90, resistance: 84 }
     },
     {
-        id: 'kendo_rappa', heroName: 'Kendo Rappa', realName: 'Kendo Rappa', role: 'Villano (Ocho Preceptos)',
+        id: 'kendo_rappa', heroName: 'Kendo Rappa', realName: 'Kendo Rappa', role: 'Villano',
         quirkName: 'Brazos Fuertes', color: '#9a3412', gradient: 'from-orange-700 to-stone-950',
         gender: 'Masculino', roles: ['Villano'], affiliations: ['Shie Hassaikai'], quirkTypes: ['Emisor'], height: 194, debutArc: 11,
         stats: { quirk: 82, intelligence: 64, experience: 85, combat: 91, strength: 91, agility: 78, speed: 87, resistance: 88 }
@@ -313,13 +313,13 @@ export const CHARACTERS = [
 
     // --- ESTUDIANTES U.A. (CLASE A, CLASE B Y TRES GRANDES) ---
     {
-        id: 'tamaki_amajiki', heroName: 'Suneater', realName: 'Tamaki Amajiki', role: 'Estudiante U.A. (Tres Grandes)',
+        id: 'tamaki_amajiki', heroName: 'Suneater', realName: 'Tamaki Amajiki', role: 'Estudiante U.A.',
         quirkName: 'Manifestación', color: '#312e81', gradient: 'from-indigo-800 to-purple-950',
         gender: 'Masculino', roles: ['Estudiante'], affiliations: ['U.A.'], quirkTypes: ['Transformación'], height: 177, debutArc: 10,
         stats: { quirk: 92, intelligence: 84, experience: 83, combat: 89, strength: 88, agility: 85, speed: 84, resistance: 88 }
     },
     {
-        id: 'nejire_hado', heroName: 'Nejire Chan', realName: 'Nejire Hado', role: 'Estudiante U.A. (Tres Grandes)',
+        id: 'nejire_hado', heroName: 'Nejire Chan', realName: 'Nejire Hado', role: 'Estudiante U.A.',
         quirkName: 'Movimiento Ondulatorio', color: '#0284c7', gradient: 'from-sky-500 to-indigo-900',
         gender: 'Femenino', roles: ['Estudiante'], affiliations: ['U.A.'], quirkTypes: ['Emisor'], height: 164, debutArc: 10,
         stats: { quirk: 91, intelligence: 81, experience: 83, combat: 86, strength: 82, agility: 89, speed: 87, resistance: 84 }
@@ -328,7 +328,7 @@ export const CHARACTERS = [
         id: 'fumikage_tokoyami', heroName: 'Tsukuyomi', realName: 'Fumikage Tokoyami', role: 'Estudiante U.A.',
         quirkName: 'Sombra Oscura', color: '#4c1d95', gradient: 'from-purple-900 to-slate-950',
         gender: 'Masculino', roles: ['Estudiante'], affiliations: ['Clase 1-A', 'U.A.'], quirkTypes: ['Mutante', 'Emisor'], height: 158, debutArc: 2,
-        stats: { quirk: 94, intelligence: 81, experience: 77, combat: 85, strength: 92, agility: 84, speed: 86, resistance: 87 }
+        stats: { quirk: 94, intelligence: 81, experience: 77, combat: 85, strength: 87, agility: 84, speed: 86, resistance: 87 }
     },
     {
         id: 'tenya_iida', heroName: 'Ingenium', realName: 'Tenya Iida', role: 'Estudiante U.A.',
@@ -343,7 +343,7 @@ export const CHARACTERS = [
         stats: { quirk: 85, intelligence: 73, experience: 77, combat: 84, strength: 89, agility: 73, speed: 72, resistance: 96 }
     },
     {
-        id: 'tetsutetsu_tetsutetsu', heroName: 'Real Steel', realName: 'Tetsutetsu Tetsutetsu', role: 'Estudiante U.A. (Clase B)',
+        id: 'tetsutetsu_tetsutetsu', heroName: 'Real Steel', realName: 'Tetsutetsu Tetsutetsu', role: 'Estudiante U.A.',
         quirkName: 'Acero', color: '#64748b', gradient: 'from-slate-500 to-zinc-900',
         gender: 'Masculino', roles: ['Estudiante'], affiliations: ['Clase 1-B', 'U.A.'], quirkTypes: ['Transformación'], height: 174, debutArc: 5,
         stats: { quirk: 84, intelligence: 72, experience: 76, combat: 83, strength: 88, agility: 72, speed: 71, resistance: 95 }
@@ -361,13 +361,13 @@ export const CHARACTERS = [
         stats: { quirk: 91, intelligence: 82, experience: 77, combat: 85, strength: 74, agility: 88, speed: 81, resistance: 81 }
     },
     {
-        id: 'itsuka_kendo', heroName: 'Battle Fist', realName: 'Itsuka Kendo', role: 'Estudiante U.A. (Clase B)',
+        id: 'itsuka_kendo', heroName: 'Battle Fist', realName: 'Itsuka Kendo', role: 'Estudiante U.A.',
         quirkName: 'Puño Gigante', color: '#ea580c', gradient: 'from-orange-600 to-teal-950',
         gender: 'Femenino', roles: ['Estudiante'], affiliations: ['Clase 1-B', 'U.A.'], quirkTypes: ['Transformación'], height: 166, debutArc: 5,
         stats: { quirk: 79, intelligence: 86, experience: 77, combat: 86, strength: 85, agility: 79, speed: 77, resistance: 81 }
     },
     {
-        id: 'neito_monoma', heroName: 'Phantom Thief', realName: 'Neito Monoma', role: 'Estudiante U.A. (Clase B)',
+        id: 'neito_monoma', heroName: 'Phantom Thief', realName: 'Neito Monoma', role: 'Estudiante U.A.',
         quirkName: 'Copia', color: '#ca8a04', gradient: 'from-yellow-500 to-blue-950',
         gender: 'Masculino', roles: ['Estudiante'], affiliations: ['Clase 1-B', 'U.A.'], quirkTypes: ['Emisor'], height: 170, debutArc: 5,
         stats: { quirk: 93, intelligence: 89, experience: 77, combat: 78, strength: 68, agility: 79, speed: 77, resistance: 72 }
@@ -422,7 +422,7 @@ export const CHARACTERS = [
     },
     {
         id: 'toru_hagakure', heroName: 'Invisible Girl', realName: 'Toru Hagakure', role: 'Estudiante U.A.',
-        quirkName: 'Invisibilidad + Refracción', color: '#06b6d4', gradient: 'from-cyan-500 to-pink-700',
+        quirkName: 'Invisibilidad', color: '#06b6d4', gradient: 'from-cyan-500 to-pink-700',
         gender: 'Femenino', roles: ['Estudiante'], affiliations: ['Clase 1-A', 'U.A.'], quirkTypes: ['Mutante'], height: 152, debutArc: 2,
         stats: { quirk: 78, intelligence: 75, experience: 75, combat: 71, strength: 64, agility: 82, speed: 77, resistance: 69 }
     },
@@ -451,7 +451,7 @@ export const CHARACTERS = [
         stats: { quirk: 78, intelligence: 84, experience: 73, combat: 66, strength: 55, agility: 80, speed: 74, resistance: 64 }
     },
     {
-        id: 'mei_hatsume', heroName: 'Hatsume', realName: 'Mei Hatsume', role: 'Estudiante U.A. (Curso de Apoyo)',
+        id: 'mei_hatsume', heroName: 'Hatsume', realName: 'Mei Hatsume', role: 'Estudiante U.A.',
         quirkName: 'Zoom', color: '#db2777', gradient: 'from-pink-600 to-amber-900',
         gender: 'Femenino', roles: ['Estudiante'], affiliations: ['U.A.'], quirkTypes: ['Mutante'], height: 157, debutArc: 5,
         stats: { quirk: 72, intelligence: 95, experience: 74, combat: 60, strength: 62, agility: 74, speed: 72, resistance: 66 }
@@ -462,7 +462,7 @@ export const CHARACTERS = [
         id: 'nezu', heroName: 'Director Nezu', realName: 'Nezu', role: 'Director de U.A.',
         quirkName: 'Alta Especificación', color: '#d97706', gradient: 'from-amber-600 to-slate-900',
         gender: 'Masculino', roles: ['Héroe Pro', 'Profesor'], affiliations: ['U.A.'], quirkTypes: ['Mutante'], height: 85, debutArc: 4,
-        stats: { quirk: 95, intelligence: 100, experience: 95, combat: 64, strength: 45, agility: 75, speed: 72, resistance: 58 }
+        stats: { quirk: 90, intelligence: 100, experience: 95, combat: 64, strength: 45, agility: 75, speed: 72, resistance: 58 }
     },
     {
         id: 'recovery_girl', heroName: 'Recovery Girl', realName: 'Chiyo Shuzenji', role: 'Heroína Médica U.A.',
@@ -480,22 +480,22 @@ export const CHARACTERS = [
         id: 'eri', heroName: 'Eri', realName: 'Eri', role: 'Protegida U.A.',
         quirkName: 'Rebobinar', color: '#dc2626', gradient: 'from-red-600 to-sky-900',
         gender: 'Femenino', roles: ['Civil'], affiliations: ['U.A.'], quirkTypes: ['Emisor'], height: 110, debutArc: 11,
-        stats: { quirk: 97, intelligence: 58, experience: 40, combat: 35, strength: 35, agility: 52, speed: 50, resistance: 45 }
+        stats: { quirk: 98, intelligence: 58, experience: 40, combat: 35, strength: 35, agility: 52, speed: 50, resistance: 45 }
     },
     {
         id: 'yoichi_shigaraki', heroName: 'Yoichi Shigaraki', realName: 'Yoichi Shigaraki', role: 'Primer Portador OFA',
-        quirkName: 'One For All (Origen)', color: '#059669', gradient: 'from-emerald-800 to-slate-950',
+        quirkName: 'One For All', color: '#059669', gradient: 'from-emerald-800 to-slate-950',
         gender: 'Masculino', roles: ['Portador'], affiliations: ['Independiente'], quirkTypes: ['Acumulación'], height: 170, debutArc: 13,
         stats: { quirk: 88, intelligence: 84, experience: 85, combat: 55, strength: 48, agility: 58, speed: 56, resistance: 50 }
     },
     {
-        id: 'david_shield', heroName: 'David Shield', realName: 'David Shield', role: 'Científico (I-Island)',
+        id: 'david_shield', heroName: 'David Shield', realName: 'David Shield', role: 'Científico',
         quirkName: 'Dedos Flexibles', color: '#1d4ed8', gradient: 'from-blue-800 to-slate-950',
         gender: 'Masculino', roles: ['Civil'], affiliations: ['Independiente'], quirkTypes: ['Mutante'], height: 182, debutArc: 10,
         stats: { quirk: 55, intelligence: 96, experience: 88, combat: 42, strength: 52, agility: 54, speed: 54, resistance: 55 }
     },
     {
-        id: 'melissa_shield', heroName: 'Melissa Shield', realName: 'Melissa Shield', role: 'Inventora (I-Island)',
+        id: 'melissa_shield', heroName: 'Melissa Shield', realName: 'Melissa Shield', role: 'Inventora',
         quirkName: 'Sin Don', color: '#ca8a04', gradient: 'from-yellow-600 to-blue-950',
         gender: 'Femenino', roles: ['Civil'], affiliations: ['Independiente'], quirkTypes: ['Sin Don'], height: 165, debutArc: 10,
         stats: { quirk: 40, intelligence: 93, experience: 72, combat: 48, strength: 54, agility: 64, speed: 62, resistance: 58 }

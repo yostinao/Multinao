@@ -1,4 +1,4 @@
-import { CHARACTERS, CATEGORIES } from '../data/characters.js';
+import { CHARACTERS, CATEGORIES } from '../data/mha-characters.js';
 
 const cache = new WeakMap();
 

@@ -10,5 +10,8 @@
     "validate": "node tools/validate-data.mjs",
     "simulate": "node tools/simulate.mjs 10000"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "tailwindcss": "^4.3.5"
+  }
 }
