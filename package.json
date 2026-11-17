@@ -1,0 +1,14 @@
+{
+  "name": "minigames",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Minijuegos de anime: Build a Hero y Guess the Hero",
+  "scripts": {
+    "start": "npx http-server . -p 8080 -c-1",
+    "build:css": "npx tailwindcss@3 -c tailwind.config.cjs -i src/input.css -o css/tailwind.css --minify",
+    "validate": "node tools/validate-data.mjs",
+    "simulate": "node tools/simulate.mjs 10000"
+  },
+  "devDependencies": {}
+}

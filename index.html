@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULTINAO</title>
+    <link rel="icon" type="image/webp" href="images/logo.webp">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="halftone bg-gray-950 text-white min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="w-full bg-black/90 backdrop-blur-md border-b border-gray-800 sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#/" id="brand-link" aria-label="MULTINAO Inicio" class="flex items-center group">
+                <img src="images/multinao-logo.webp" alt="MULTINAO" class="h-10 sm:h-11 w-auto object-contain group-hover:scale-105 transition-transform drop-shadow-[0_0_10px_rgba(0,240,255,0.55)]">
+            </a>
+            <nav id="header-crumbs" aria-label="Navegación" class="flex items-center gap-2 text-xs sm:text-sm"></nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="app-root" class="flex-1 flex flex-col justify-center py-6 sm:py-8">
+
+        <!-- VISTA 1: Selector de Universos -->
+        <section id="view-universe" class="view-section active max-w-5xl mx-auto px-4 w-full">
+            <div class="flex justify-center mb-8 sm:mb-10">
+                <h1 class="sr-only">MULTINAO</h1>
+                <img src="images/multinao-logo.webp" alt="MULTINAO" class="h-24 sm:h-32 md:h-36 w-auto object-contain drop-shadow-[0_0_24px_rgba(0,240,255,0.65)]">
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <!-- My Hero Academia -->
+                <a href="#/mha" class="group relative rounded-2xl overflow-hidden border-2 border-emerald-500/50 hover:border-emerald-400 bg-gray-900 shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col">
+                    <div class="aspect-[16/10] bg-gradient-to-br from-emerald-500/20 via-red-600/20 to-gray-950 relative overflow-hidden flex items-center justify-center p-6">
+                        <img src="images/banners/mha_logo.webp" alt="My Hero Academia" class="max-h-32 sm:max-h-36 object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-2xl">
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between bg-gray-900/95 border-t border-gray-800">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-1.5">
+                                <h2 class="font-hero text-2xl sm:text-3xl text-emerald-400 tracking-wide">MY HERO ACADEMIA</h2>
+                                <span class="text-[11px] font-bold uppercase bg-emerald-500/15 text-emerald-300 border border-emerald-500/40 px-2 py-0.5 rounded">80 Héroes</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-gray-300">Build a Hero (vs CPU / 2P) y Guess the Hero diario.</p>
+                        </div>
+                        <span class="mt-4 inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emerald-400 group-hover:translate-x-1 transition-transform">
+                            Entrar al universo →
+                        </span>
+                    </div>
+                </a>
+
+                <!-- One Piece -->
+                <a href="#/op" class="group relative rounded-2xl overflow-hidden border-2 border-amber-500/50 hover:border-amber-400 bg-gray-900 shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col">
+                    <div class="aspect-[16/10] bg-gradient-to-br from-amber-500/20 via-sky-600/20 to-gray-950 relative overflow-hidden flex items-center justify-center p-6">
+                        <img src="images/banners/op_logo.webp" alt="One Piece" class="max-h-32 sm:max-h-36 object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-2xl">
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between bg-gray-900/95 border-t border-gray-800">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-1.5">
+                                <h2 class="font-hero text-2xl sm:text-3xl text-amber-400 tracking-wide">ONE PIECE</h2>
+                                <span class="text-[11px] font-bold uppercase bg-amber-500/15 text-amber-300 border border-amber-500/40 px-2 py-0.5 rounded">105 Piratas</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-gray-300">Build a Pirate (vs CPU / 2P) y Adivina el Pirata (hasta Isla Gyojin).</p>
+                        </div>
+                        <span class="mt-4 inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-amber-400 group-hover:translate-x-1 transition-transform">
+                            Zarpar al Grand Line →
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- VISTA 2A: Minijuegos de My Hero Academia -->
+        <section id="view-mha" class="view-section max-w-5xl mx-auto px-4 w-full">
+            <div class="mb-4">
+                <a href="#/" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold uppercase tracking-wider text-gray-300 hover:text-white bg-white/5 hover:bg-white/10 px-3.5 py-2 rounded-lg transition">
+                    <span>←</span><span>INICIO</span>
+                </a>
+            </div>
+
+            <div class="flex flex-col items-center text-center mb-8">
+                <h1 class="sr-only">My Hero Academia</h1>
+                <img src="images/banners/mha_logo.webp" alt="My Hero Academia" class="h-24 sm:h-32 w-auto object-contain mb-2 drop-shadow-2xl">
+                <p class="text-gray-300 text-sm sm:text-base">Selecciona un minijuego</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Build a Hero -->
+                <button type="button" data-open-build="mha" class="group relative aspect-[16/10] w-full rounded-2xl overflow-hidden border-2 border-emerald-500/40 hover:border-emerald-400 bg-gradient-to-br from-emerald-950 via-gray-950 to-black shadow-2xl transition-all duration-300 hover:-translate-y-1 text-left cursor-pointer">
+                    <img src="images/banners/mha_build_hero.webp" alt="Build a Hero" class="w-full h-full object-cover opacity-50 group-hover:opacity-70 group-hover:scale-105 transition-all duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-emerald-900/35 to-emerald-500/15"></div>
+                    <h2 class="font-hero text-3xl sm:text-4xl text-emerald-400 tracking-wide absolute bottom-4 left-5 drop-shadow-[0_2px_6px_rgba(0,0,0,0.95)]">
+                        BUILD A HERO
+                    </h2>
+                </button>
+
+                <!-- Guess the Hero -->
+                <a href="#/mha/guess" class="group relative aspect-[16/10] w-full rounded-2xl overflow-hidden border-2 border-red-500/40 hover:border-red-400 bg-gradient-to-br from-red-950 via-gray-950 to-black shadow-2xl transition-all duration-300 hover:-translate-y-1 block">
+                    <img src="images/banners/mha_guess_hero.webp" alt="Guess the Hero" class="w-full h-full object-cover opacity-50 group-hover:opacity-70 group-hover:scale-105 transition-all duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-red-950/95 via-red-900/35 to-red-500/15"></div>
+                    <h2 class="font-hero text-3xl sm:text-4xl text-red-400 tracking-wide absolute bottom-4 left-5 drop-shadow-[0_2px_6px_rgba(0,0,0,0.95)]">
+                        GUESS THE HERO
+                    </h2>
+                </a>
+            </div>
+        </section>
+
+        <!-- VISTA 2B: Minijuegos de One Piece -->
+        <section id="view-op" class="view-section max-w-5xl mx-auto px-4 w-full">
+            <div class="mb-4">
+                <a href="#/" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold uppercase tracking-wider text-gray-300 hover:text-white bg-white/5 hover:bg-white/10 px-3.5 py-2 rounded-lg transition">
+                    <span>←</span><span>INICIO</span>
+                </a>
+            </div>
+
+            <div class="flex flex-col items-center text-center mb-8">
+                <h1 class="sr-only">One Piece</h1>
+                <img src="images/banners/op_logo.webp" alt="One Piece" class="h-24 sm:h-32 w-auto object-contain mb-2 drop-shadow-2xl">
+                <p class="text-gray-300 text-sm sm:text-base">Selecciona un minijuego</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Build a Pirate -->
+                <button type="button" data-open-build="op" class="group relative aspect-[16/10] w-full rounded-2xl overflow-hidden border-2 border-amber-500/40 hover:border-amber-400 bg-gradient-to-br from-amber-950 via-gray-950 to-black shadow-2xl transition-all duration-300 hover:-translate-y-1 text-left cursor-pointer">
+                    <img src="images/banners/op_build_pirate.webp" alt="Build a Pirate" class="w-full h-full object-cover opacity-50 group-hover:opacity-70 group-hover:scale-105 transition-all duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-amber-950/95 via-amber-900/35 to-amber-500/15"></div>
+                    <h2 class="font-hero text-3xl sm:text-4xl text-amber-400 tracking-wide absolute bottom-4 left-5 drop-shadow-[0_2px_6px_rgba(0,0,0,0.95)]">
+                        BUILD A PIRATE
+                    </h2>
+                </button>
+
+                <!-- Guess a Pirate -->
+                <a href="#/op/guess" class="group relative aspect-[16/10] w-full rounded-2xl overflow-hidden border-2 border-sky-500/40 hover:border-sky-400 bg-gradient-to-br from-sky-950 via-gray-950 to-black shadow-2xl transition-all duration-300 hover:-translate-y-1 block">
+                    <img src="images/banners/op_guess_pirate.webp" alt="Guess a Pirate" class="w-full h-full object-cover opacity-50 group-hover:opacity-70 group-hover:scale-105 transition-all duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-sky-950/95 via-sky-900/35 to-sky-500/15"></div>
+                    <h2 class="font-hero text-3xl sm:text-4xl text-sky-400 tracking-wide absolute bottom-4 left-5 drop-shadow-[0_2px_6px_rgba(0,0,0,0.95)]">
+                        GUESS A PIRATE
+                    </h2>
+                </a>
+            </div>
+        </section>
+
+        <!-- VISTA 3: Contenedor dinámico de juego -->
+        <section id="view-game" class="view-section w-full"></section>
+    </main>
+
+    <!-- Modal de configuración de partida (Build a Hero / Build a Pirate) -->
+    <div id="build-setup-modal" role="dialog" aria-modal="true" aria-labelledby="build-setup-title" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-gray-900 border-2 border-emerald-500/60 rounded-2xl max-w-md w-full p-6 shadow-2xl relative">
+            <button type="button" id="build-setup-close" aria-label="Cerrar" class="absolute top-3.5 right-3.5 text-gray-400 hover:text-white w-8 h-8 rounded-lg hover:bg-white/10 flex items-center justify-center font-bold">✕</button>
+
+            <h2 id="build-setup-title" class="font-hero text-3xl text-emerald-400 tracking-wide mb-1">BUILD A HERO</h2>
+            <p class="text-xs sm:text-sm text-gray-300 mb-5">Elige el modo de juego</p>
+
+            <!-- Selección de modo -->
+            <div class="grid grid-cols-2 gap-3 mb-5">
+                <button type="button" data-setup-mode="cpu" class="p-3.5 rounded-xl border-2 border-emerald-400 bg-emerald-500/15 text-left transition cursor-pointer">
+                    <div class="text-xl mb-1">🤖</div>
+                    <div class="font-hero text-xl text-white tracking-wide">VS CPU</div>
+                    <div class="text-[11px] text-gray-300">Desafía a la máquina</div>
+                </button>
+                <button type="button" data-setup-mode="2p" class="p-3.5 rounded-xl border-2 border-gray-700 bg-gray-800/70 hover:border-gray-500 text-left transition cursor-pointer">
+                    <div class="text-xl mb-1">👥</div>
+                    <div class="font-hero text-xl text-white tracking-wide">2 JUGADORES</div>
+                    <div class="text-[11px] text-gray-300">Duelo local por turnos</div>
+                </button>
+            </div>
+
+            <!-- Dificultad CPU -->
+            <div id="build-setup-diff-wrap" class="mb-6">
+                <span class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-2">Dificultad de la CPU</span>
+                <div class="grid grid-cols-3 gap-2" role="group" aria-label="Dificultad de la CPU">
+                    <button type="button" data-setup-diff="easy" class="py-2 px-3 rounded-xl border border-gray-700 bg-gray-800 text-xs font-bold text-gray-300 hover:text-white transition cursor-pointer">
+                        Fácil
+                    </button>
+                    <button type="button" data-setup-diff="normal" class="py-2 px-3 rounded-xl border border-emerald-400 bg-emerald-500/20 text-xs font-bold text-white transition cursor-pointer">
+                        Normal
+                    </button>
+                    <button type="button" data-setup-diff="hard" class="py-2 px-3 rounded-xl border border-gray-700 bg-gray-800 text-xs font-bold text-gray-300 hover:text-white transition cursor-pointer">
+                        Difícil
+                    </button>
+                </div>
+            </div>
+
+            <button type="button" id="build-setup-start" class="w-full btn-comic bg-emerald-400 hover:bg-emerald-300 text-black font-hero text-2xl py-2.5 rounded-xl tracking-wider cursor-pointer">
+                COMENZAR PARTIDA
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal accesible de confirmación al salir de una partida activa -->
+    <div id="leave-modal" role="dialog" aria-modal="true" aria-labelledby="leave-title" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-gray-900 border-2 border-emerald-500/60 rounded-2xl max-w-md w-full p-6 shadow-2xl">
+            <h2 id="leave-title" class="font-hero text-2xl sm:text-3xl text-emerald-400 tracking-wide mb-2">¿ABANDONAR PARTIDA?</h2>
+            <p class="text-sm text-gray-300 mb-5">Tienes una partida en curso. Si sales ahora perderás el progreso actual.</p>
+            <div class="flex justify-end gap-2.5">
+                <button type="button" id="leave-cancel" class="px-4 py-2 rounded-xl bg-gray-800 hover:bg-gray-700 text-white font-bold text-xs uppercase tracking-wider transition">
+                    Seguir jugando
+                </button>
+                <button type="button" id="leave-confirm" class="px-4 py-2 rounded-xl bg-red-600 hover:bg-red-500 text-white font-bold text-xs uppercase tracking-wider transition">
+                    Salir
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        const views = {
+            universe: document.getElementById('view-universe'),
+            mha:      document.getElementById('view-mha'),
+            op:       document.getElementById('view-op'),
+            game:     document.getElementById('view-game')
+        };
+        const crumbs = document.getElementById('header-crumbs');
+        const leaveModal = document.getElementById('leave-modal');
+        const leaveCancel = document.getElementById('leave-cancel');
+        const leaveConfirm = document.getElementById('leave-confirm');
+
+        // Modal de configuración de Build a Hero / Build a Pirate
+        const setupModal = document.getElementById('build-setup-modal');
+        const setupTitle = document.getElementById('build-setup-title');
+        const setupClose = document.getElementById('build-setup-close');
+        const setupDiffWrap = document.getElementById('build-setup-diff-wrap');
+        const setupStart = document.getElementById('build-setup-start');
+
+        let setupUniverse = 'mha';
+        let setupMode = 'cpu';
+        let setupDiff = 'normal';
+
+        function syncSetupUI() {
+            const isOp = setupUniverse === 'op';
+            const accentBorder = isOp ? 'border-amber-400' : 'border-emerald-400';
+            const accentBg = isOp ? 'bg-amber-500/20' : 'bg-emerald-500/20';
+
+            setupTitle.textContent = isOp ? 'BUILD A PIRATE' : 'BUILD A HERO';
+            setupTitle.className = `font-hero text-3xl ${isOp ? 'text-amber-400' : 'text-emerald-400'} tracking-wide mb-1`;
+            setupStart.className = `w-full btn-comic ${isOp ? 'bg-amber-400 hover:bg-amber-300' : 'bg-emerald-400 hover:bg-emerald-300'} text-black font-hero text-2xl py-2.5 rounded-xl tracking-wider cursor-pointer`;
+
+            setupModal.querySelectorAll('[data-setup-mode]').forEach(btn => {
+                const active = btn.dataset.setupMode === setupMode;
+                btn.className = active
+                    ? `p-3.5 rounded-xl border-2 ${accentBorder} ${accentBg} text-left transition cursor-pointer`
+                    : 'p-3.5 rounded-xl border-2 border-gray-700 bg-gray-800/70 hover:border-gray-500 text-left transition cursor-pointer';
+            });
+
+            setupDiffWrap.classList.toggle('hidden', setupMode !== 'cpu');
+
+            setupModal.querySelectorAll('[data-setup-diff]').forEach(btn => {
+                const active = btn.dataset.setupDiff === setupDiff;
+                btn.className = active
+                    ? `py-2 px-3 rounded-xl border ${accentBorder} ${accentBg} text-xs font-bold text-white transition cursor-pointer`
+                    : 'py-2 px-3 rounded-xl border border-gray-700 bg-gray-800 text-xs font-bold text-gray-300 hover:text-white transition cursor-pointer';
+            });
+        }
+
+        function openBuildSetup(universe) {
+            setupUniverse = universe;
+            setupMode = 'cpu';
+            const diffKey = universe === 'op' ? 'build_pirate_difficulty' : 'prime_hero_difficulty';
+            setupDiff = localStorage.getItem(diffKey) || 'normal';
+            if (!['easy', 'normal', 'hard'].includes(setupDiff)) setupDiff = 'normal';
+            syncSetupUI();
+            setupModal.classList.remove('hidden');
+            setupStart.focus();
+        }
+
+        function closeBuildSetup() {
+            setupModal.classList.add('hidden');
+        }
+
+        document.querySelectorAll('[data-open-build]').forEach(btn => {
+            btn.addEventListener('click', () => openBuildSetup(btn.dataset.openBuild));
+        });
+
+        setupModal.querySelectorAll('[data-setup-mode]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                setupMode = btn.dataset.setupMode;
+                syncSetupUI();
+            });
+        });
+
+        setupModal.querySelectorAll('[data-setup-diff]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                setupDiff = btn.dataset.setupDiff;
+                syncSetupUI();
+            });
+        });
+
+        setupClose.addEventListener('click', closeBuildSetup);
+        setupModal.addEventListener('click', (e) => {
+            if (e.target === setupModal) closeBuildSetup();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !setupModal.classList.contains('hidden')) closeBuildSetup();
+        });
+
+        setupStart.addEventListener('click', () => {
+            if (setupMode === 'cpu') {
+                const diffKey = setupUniverse === 'op' ? 'build_pirate_difficulty' : 'prime_hero_difficulty';
+                localStorage.setItem(diffKey, setupDiff);
+            }
+            closeBuildSetup();
+            location.hash = `#/${setupUniverse}/build/${setupMode}`;
+        });
+
+        // Fallback global para cualquier imagen .webp faltante
+        document.addEventListener('error', (e) => {
+            const img = e.target;
+            if (img instanceof HTMLImageElement && !img.dataset.fallback) {
+                img.dataset.fallback = '1';
+                const label = encodeURIComponent((img.alt || '?').slice(0, 14));
+                img.src = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256"><rect width="256" height="256" rx="24" fill="%23111827"/><text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" fill="%2334d399" font-family="sans-serif" font-weight="bold" font-size="26">${label}</text></svg>`;
+            }
+        }, true);
+
+        let activeGame = null;
+        let currentRoute = '';
+        let ignoreNextHash = false;
+
+        function askLeaveConfirmation() {
+            return new Promise((resolve) => {
+                const prevFocus = document.activeElement;
+                leaveModal.classList.remove('hidden');
+                leaveCancel.focus();
+
+                const done = (ok) => {
+                    leaveModal.classList.add('hidden');
+                    leaveCancel.removeEventListener('click', onCancel);
+                    leaveConfirm.removeEventListener('click', onOk);
+                    document.removeEventListener('keydown', onKey);
+                    if (prevFocus && prevFocus.focus) prevFocus.focus();
+                    resolve(ok);
+                };
+                const onCancel = () => done(false);
+                const onOk = () => done(true);
+                const onKey = (e) => { if (e.key === 'Escape') done(false); };
+
+                leaveCancel.addEventListener('click', onCancel);
+                leaveConfirm.addEventListener('click', onOk);
+                document.addEventListener('keydown', onKey);
+            });
+        }
+
+        function showSection(name) {
+            Object.entries(views).forEach(([k, el]) => {
+                el.classList.toggle('active', k === name);
+            });
+        }
+
+        function setCrumbs(items) {
+            crumbs.innerHTML = items.map((it, i) => {
+                if (i === items.length - 1) {
+                    return `<span class="text-gray-200 font-bold truncate max-w-[140px] sm:max-w-none">${it.label}</span>`;
+                }
+                return `<a href="${it.href}" class="text-gray-400 hover:text-white transition">${it.label}</a><span class="text-gray-600">/</span>`;
+            }).join('');
+        }
+
+        function showLoadError(err) {
+            console.error(err);
+            views.game.innerHTML = `
+                <div class="max-w-lg mx-auto bg-red-950/80 border border-red-500 rounded-2xl p-5 text-center">
+                    <h2 class="font-hero text-2xl text-red-400 mb-2">ERROR AL CARGAR EL MINIJUEGO</h2>
+                    <p class="text-xs text-gray-200 font-mono break-all mb-4">${err.message}</p>
+                    <a href="#/" class="inline-block bg-gray-800 hover:bg-gray-700 text-white text-xs font-bold uppercase px-4 py-2 rounded-lg">Volver al inicio</a>
+                </div>
+            `;
+        }
+
+        async function renderRoute(rawHash) {
+            const route = (rawHash || '#/').replace(/^#/, '') || '/';
+            if (route === currentRoute) return;
+
+            if (activeGame && activeGame.hasProgress && activeGame.hasProgress()) {
+                const ok = await askLeaveConfirmation();
+                if (!ok) {
+                    ignoreNextHash = true;
+                    location.hash = `#${currentRoute}`;
+                    return;
+                }
+            }
+
+            if (activeGame && activeGame.cleanup) {
+                activeGame.cleanup();
+                activeGame = null;
+            }
+            views.game.innerHTML = '';
+            currentRoute = route;
+
+            try {
+                // --- Rutas My Hero Academia ---
+                if (route === '/mha') {
+                    showSection('mha');
+                    setCrumbs([{ label: 'Inicio', href: '#/' }, { label: 'MHA' }]);
+                    return;
+                }
+                if (route === '/mha/build/cpu' || route === '/mha/build/2p' || route === '/build/cpu' || route === '/build/2p') {
+                    const mode = route.endsWith('/2p') ? '2p' : 'cpu';
+                    showSection('game');
+                    setCrumbs([{ label: 'Inicio', href: '#/' }, { label: 'MHA', href: '#/mha' }, { label: mode === '2p' ? 'Build 2P' : 'Build vs CPU' }]);
+                    const mod = await import('./javascript/games/build-hero.js');
+                    activeGame = mod.mountPrimeHeroGame(views.game, { mode, onExit: () => { location.hash = '#/mha'; } });
+                    return;
+                }
+                if (route === '/mha/guess' || route === '/guess') {
+                    showSection('game');
+                    setCrumbs([{ label: 'Inicio', href: '#/' }, { label: 'MHA', href: '#/mha' }, { label: 'Guess the Hero' }]);
+                    const mod = await import('./javascript/games/guess-hero.js');
+                    activeGame = mod.mountGuessHeroGame(views.game, { onExit: () => { location.hash = '#/mha'; } });
+                    return;
+                }
+
+                // --- Rutas One Piece ---
+                if (route === '/op') {
+                    showSection('op');
+                    setCrumbs([{ label: 'Inicio', href: '#/' }, { label: 'One Piece' }]);
+                    return;
+                }
+                if (route === '/op/build/cpu' || route === '/op/build/2p') {
+                    const mode = route.endsWith('/2p') ? '2p' : 'cpu';
+                    showSection('game');
+                    setCrumbs([{ label: 'Inicio', href: '#/' }, { label: 'One Piece', href: '#/op' }, { label: mode === '2p' ? 'Pirate 2P' : 'Pirate vs CPU' }]);
+                    const mod = await import('./javascript/games/build-pirate.js');
+                    activeGame = mod.mountBuildPirateGame(views.game, { mode, onExit: () => { location.hash = '#/op'; } });
+                    return;
+                }
+                if (route === '/op/guess') {
+                    showSection('game');
+                    setCrumbs([{ label: 'Inicio', href: '#/' }, { label: 'One Piece', href: '#/op' }, { label: 'Guess a Pirate' }]);
+                    const mod = await import('./javascript/games/guess-pirate.js');
+                    activeGame = mod.mountGuessPirateGame(views.game, { onExit: () => { location.hash = '#/op'; } });
+                    return;
+                }
+
+                // --- Home / Universos ---
+                showSection('universe');
+                setCrumbs([{ label: 'Universos' }]);
+            } catch (err) {
+                showLoadError(err);
+            }
+        }
+
+        window.addEventListener('hashchange', () => {
+            if (ignoreNextHash) {
+                ignoreNextHash = false;
+                return;
+            }
+            renderRoute(location.hash);
+        });
+
+        renderRoute(location.hash || '#/');
+    </script>
+</body>
+</html>

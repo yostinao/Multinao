@@ -1,0 +1,202 @@
+:root {
+    --header-h: 64px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--header-h) + 16px);
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+    background-color: #030712;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Fondo combinado halftone + gradientes radiales */
+.halftone {
+    background-color: #030712;
+    background-image:
+        radial-gradient(circle at 12% 15%, rgba(16, 185, 129, 0.12), transparent 42%),
+        radial-gradient(circle at 88% 85%, rgba(6, 182, 212, 0.10), transparent 42%),
+        radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 22px 22px;
+}
+
+/* Tipografía estilo cómic / manga */
+.font-hero {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.05em;
+}
+
+/* Control de vistas SPA */
+.view-section {
+    display: none;
+    animation: fadeInView 0.22s ease-out;
+}
+
+.view-section.active {
+    display: block;
+}
+
+@keyframes fadeInView {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Botones estilo cómic con sombra sólida */
+.btn-comic {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000000;
+    box-shadow: 0 4px 0 #000000;
+    transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.15s ease;
+    user-select: none;
+}
+
+.btn-comic:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #000000;
+}
+
+.btn-comic:active:not(:disabled) {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #000000;
+}
+
+/* Ranuras seleccionables en Build a Hero y Build a Pirate */
+.slot-available {
+    border-color: rgba(52, 211, 153, 0.7);
+    box-shadow: 0 0 0 1px rgba(52, 211, 153, 0.25), 0 4px 14px rgba(52, 211, 153, 0.10);
+}
+
+.slot-available:hover {
+    border-color: #34d399;
+    transform: translateX(2px);
+}
+
+/* Minibarra pegajosa solo en pantallas móviles/tablet */
+.ph-minibar {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    .ph-minibar.is-active {
+        display: flex;
+        position: sticky;
+        top: calc(var(--header-h) + 8px);
+        z-index: 30;
+        backdrop-filter: blur(10px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .ph-minibar,
+    .ph-minibar.is-active {
+        display: none !important;
+    }
+}
+
+/* Animación de revelación en Guess the Hero / Adivina el Pirata */
+@keyframes flipCell {
+    0% {
+        opacity: 0;
+        transform: perspective(600px) rotateX(-75deg) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: perspective(600px) rotateX(0deg) scale(1);
+    }
+}
+
+.flip-cell {
+    animation: flipCell 0.36s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Scrollbars limpios para tablas y sugerencias */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #090d16;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #374151;
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4b5563;
+}
+
+/* Accesibilidad: reducir animaciones si el usuario lo prefiere */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Animaciones de enfrentamiento en resultados */
+@keyframes duelRowIn {
+    from { opacity: 0; transform: translateY(14px) scale(0.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes duelClashLeft {
+    0% { transform: translateX(-16px) scale(0.97); }
+    50% { transform: translateX(16px) scale(1.06); }
+    78% { transform: translateX(-4px) scale(1.01); }
+    100% { transform: translateX(0) scale(1); }
+}
+
+@keyframes duelClashRight {
+    0% { transform: translateX(16px) scale(0.97); }
+    50% { transform: translateX(-16px) scale(1.06); }
+    78% { transform: translateX(4px) scale(1.01); }
+    100% { transform: translateX(0) scale(1); }
+}
+
+@keyframes duelBadgePop {
+    0% { transform: scale(0.4) rotate(-14deg); opacity: 0; }
+    60% { transform: scale(1.22) rotate(5deg); opacity: 1; }
+    100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+.duel-row-in { animation: duelRowIn 0.35s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.duel-clash-left { animation: duelClashLeft 0.6s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.duel-clash-right { animation: duelClashRight 0.6s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.duel-badge-pop { animation: duelBadgePop 0.4s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+@media (max-width: 640px) {
+    @keyframes duelClashLeft {
+        0% { transform: translateX(-8px); }
+        50% { transform: translateX(8px); }
+        100% { transform: translateX(0); }
+    }
+    @keyframes duelClashRight {
+        0% { transform: translateX(8px); }
+        50% { transform: translateX(-8px); }
+        100% { transform: translateX(0); }
+    }
+}
